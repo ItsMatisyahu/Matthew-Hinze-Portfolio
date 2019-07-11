@@ -1,0 +1,174 @@
+/* style for the elements*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	overflow-y: scroll;
+	background-color: white;
+	background-image: url(../Assets/Index_Background.png)
+}
+
+body {
+	color: Black;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 100%;
+	max-width: 960px;
+	border: 5px solid Black;
+	border-bottom: none;
+	margin: 0 auto;
+}
+
+
+a:focus, a:hover{
+	font-style: italic;
+}
+
+/*style for header*/
+header{
+	height: 120px;
+	text-align: center;
+	border-bottom: 5px solid black;
+}
+
+/*style for nav_menu */
+#nav_menu ul{
+	list-style-type: none;
+	padding: 0;
+	position: relative;
+	border-bottom: 5px solid black;
+}
+
+#nav_menu ul li{
+	float: left;
+}
+
+#nav_menu ul li a{
+	width: 240px;
+	
+	
+	text-align: center;
+	display: block;
+	padding: 1em 0;
+	text-decoration: none;
+	color: Black;
+	font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+	background-color: grey;
+}
+
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%
+}
+
+#nav_menu ul ul li{
+	float: none;
+}
+
+#nav_menu ul li:hover> ul {
+	display: block;
+	border: none;
+	background-color: lightgrey;
+	border: none;
+}
+
+	
+#nav_menu > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*Main Stlying*/
+main{
+	clear: left;
+	margin: 2%;	
+}
+
+
+main img{
+	max-width: 60%;
+	margin: 0px auto;
+	display: block;
+	float: right;
+	padding: 2%;
+	padding-top: none;
+}
+
+#contactimage{float:none;}
+
+#title{font-size: 3em; text-align: center; border: none;}
+
+main p{
+	margin: 0px;
+	font-size: 1.1em;
+}
+
+main h1{
+	margin-top: 1%;
+	border-bottom: 2px solid black;
+}
+
+main h2{
+	padding: 1em 0 1em 0;
+}
+
+ol{font-size: 1.2em;}
+
+ol li{margin-left: 15px; font-size: 1.1em;}
+
+.recruit{text-align: center;}
+.center{text-align: center;}
+
+#footnote {font-size: 1em;}
+
+#aboutus{
+	font-size: 2em;
+	text-align: center;	
+	margin-top: .5em;
+	border-bottom: 2px solid black;
+}
+
+/*Styling for the members page*/
+
+.member{ 
+	border: 2px solid black;
+	margin: 1em auto;
+	height: 200px;
+}
+
+ .member img{
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 1 em;
+	margin-right: 1em;
+	max-width: 25%;
+	max-height: 80%;
+	float: left;
+	clear: bottom;
+}
+ 
+ .member p{
+	margin-top: 10% auto 10% auto;
+}
+
+
+/*Footer Styling*/
+footer{
+	clear: both;
+	background-color: black;
+}
+
+footer p{
+	text-align: center;
+	color: white;
+	padding: .5em;
+}

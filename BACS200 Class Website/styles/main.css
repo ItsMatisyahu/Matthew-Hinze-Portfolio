@@ -1,0 +1,227 @@
+/* style for the elements*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	background-color: white;
+	overflow-y: scroll;
+}
+
+body {
+	color: Black;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 100%;
+    max-width: 900px;
+	min-width: 250px;
+    margin: 0 auto;
+    border: 5px solid DodgerBlue;
+    background-color: #D3D3D3;
+    border-bottom: none;
+}
+a:focus, a:hover{
+	font-style: italic;
+}
+
+/*style for header*/
+header{
+	text-align: center;
+}
+
+header h1{
+	font-size: 2.5em;
+	border-top: 5px solid DodgerBlue;
+	padding: .25em 0;
+}
+
+header img{
+	margin: .25em auto;
+	padding-bottom: none;
+}
+
+/*style for nav_menu */
+#nav_menu ul{
+	list-style-type: none;
+	padding: 0;
+	position: relative;
+}
+
+#left_menu{
+	float: left;
+	width: 7%;
+	text-align: center;
+	padding-left: .1em;
+}
+
+#right_menu{
+	float: left;
+	width: 93%
+}
+
+#nav_menu ul li a{
+	text-align: left;
+	display: block;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: DodgerBlue;
+	color: white;
+	font-weight: bold;
+}
+
+/* Styling for the main */
+main{
+	clear:left;
+}
+
+/*Style for the section */
+section{
+	width: 50%;
+	margin-left: 24%;
+	margin-right: 24%;
+	float: none;
+	padding: .25em 0;
+}
+
+section h1{
+	font-size: 150%;
+	padding: .25em 0;
+}
+
+section h2{
+	font-size: 130%;
+	padding: .25em 0;
+}
+
+#bio{
+	/*border-bottom: 2px solid DodgerBlue;*/
+	padding: .25em 0;
+}
+
+section p {
+	padding: .25em 0 1em 0;
+}
+
+section ul{
+	list-style-type:disc;
+	font-size: 120%;
+	margin-left: 1.5em;
+}
+
+
+section ul li a{
+	text-decoration: none;
+	color:
+}
+
+/* style for article */
+article{
+	border-top: 3px solid DodgerBlue;
+	padding-top: 2px;
+	margin-bottom: .25em;
+}
+
+article h2{
+	padding-top: .25em;
+}
+
+article img{
+	float: right; 		
+	margin: .4em .2em .75em .75em;
+	border: 3px solid DodgerBlue;
+	border-radius: 20px;
+	max-width: 50%;
+}
+
+article p{
+	padding: .25em ;
+	clear: left;
+}
+
+article a{text-decoration: none;}
+
+/*Style for the footer */
+footer{
+	background-color:DodgerBlue;
+	clear: both;
+}
+footer p{
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+/*Hide the Mobile Menu and secondary image*/
+#mobile_menu{display: none;}
+#mobile_logo{display: none;}
+#hinze_profile{display: none;}
+
+/* Tablet Portrait layout (768 to 959px)*/
+@media only screen and (max-width: 959px){
+	section h1{font-size: 135%;}
+	section h2{font-size: 120%;}
+	header img{float: none;}
+}
+
+/* mobile landscape layout (480px to 800px) */
+@media only screen and (max-width: 800px) {
+	#logo{display: none;}
+	#assignments{
+		float: none;
+		}
+	#hinze_profile{
+		border: 3px solid DodgerBlue;
+		border-radius: 30px;
+		float: none;
+		display: block;
+		max-height: 20%;
+		max-width: 20%;
+		min-height: 10%;
+		min-width: 10%;
+		text-align: center;
+		margin: .25em auto;
+		}
+	#mobile_logo{
+		display: block;
+		float: left;
+		max-height: 15%;
+		max-width: 100px;
+		min-height: 110;
+		min-width: 12%;
+		margin: .25em auto;
+		margin-left: 20%;
+		}
+	section img{
+		display: none;
+		}
+	header {text-align: center;}
+	section{
+		float: none; 
+		width: 95%;
+		margin: 0;
+		padding: .25em 1em;}
+	#nav_menu{display: none;}
+	#mobile_menu{display: block;}
+	.slicknav_menu{background-color: DodgerBlue !important;}
+}
+
+/* mobile portrait to mobile landscape  */
+@media only screen and (max-width: 479px) {
+	
+	body{font-size: 90%;}
+	section img{display: none;}
+	#mobile_logo{display: none;}
+	/*#hinze_profile{
+		border: 3px solid DodgerBlue;
+		border-radius: 30px;
+		float: none;
+		display: block;
+		max-height: 20%;
+		max-width: 20%;
+		min-height: 10%;
+		min-width: 10%;
+		text-align: center;
+		margin: 1em auto;
+		}*/
+}
